@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Youness Watches</title>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- HEADER -->
+   <div class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+         <div class="logo">
+            <img src="images/logo.png">
+         </div>
+         <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#store">store</a></li>
+         </ul>
+         <div class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="count" id="count">0</div>
+         </div>
+      </div>
+      <!-- END OF NAVBAR -->
+      <!-- HOME -->
+      <div class="home">
+         <h1>YOUNESS WATCHES</h1>
+         <button class="shop-btn explore-btn">EXPLORE NOW</button>
+      </div>
+      <!-- END OF HOME -->
+      <!-- CART -->
+      <div class="cart-container">
+         <div class="cart">
+            <i class="fas fa-times"></i>
+            <h1>YOUR CART</h1>
+            <div class="cart-products">
+               <!-- PRODUCT-->
+               <!-- END OF PRODUCT-->         
+            </div>
+            <div class="total">
+                  <p>TOTAL : </p>
+                  <div>$</div>
+                  <span id="total-amount" class="total-amount"></span>
+            </div>
+            <button id="clear-cart-btn" class="shop-btn clear-cart-btn">CLEAR CART</button>
+         </div>
+      </div>
+      <!-- END OF CART -->
+   </div>
+   <!-- END OF HEADER -->
+   <!-- ABOUT US -->
+   <div id="about" class="about-us">
+      <h1>ABOUT US</h1>
+      <div class="aboutus-fullcontent">
+         <div class="abtus-txt-btn">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <button class="shop-btn shop-now">Shop now</button>
+         </div>
+
+         <div class="about-us-img">
+            <img src="images/5.jpg">
+         </div>
+      </div>
+      
+   </div>
+   <!-- END OF ABOUT US -->
+   <!-- OUR STORE -->
+   <div id="store" class="store">
+      <h1>OUR STORE</h1>
+      <div class="store-btns">
+         <button class="btn classical" data-filter="classical">CLASSICAL</button>
+         <button class="btn sport" data-filter="sport">SPORT</button>
+         <button class="btn fancy" data-filter="fancy">FANCY</button>
+         <button class="btn women" data-filter="women">WOMEN</button>
+         <button class="btn all" data-filter="all">ALL</button>
+      </div>
+      <form class="form" id="form">
+         <input class="filter" id="searchFilter" type="text">
+         <i class="fas fa-search"></i>
+      </form>   
+   </div>
+   <!-- END OF OUR STORE -->
+   <!-- PRODUCTS -->
+   <div class="products-container">
+      <div id="products" class="products">
+         <!-- PRODUCT -->
+         <div class="watch classical">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/1.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id = "1">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">classical</div>
+               <div class="watch-price">$<span class="watch-price-amount">20</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch fancy">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/2.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="2">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">fancy</div>
+               <div class="watch-price">$<span class="watch-price-amount">800</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch classical">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/3.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="3">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">classical</div>
+               <div class="watch-price">$<span class="watch-price-amount">10</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch fancy">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/4.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="4">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">fancy</div>
+               <div class="watch-price">$<span class="watch-price-amount">300</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch women">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/5.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="5">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">women</div>
+               <div class="watch-price">$<span class="watch-price-amount">74</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch women">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/6.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="6">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">women</div>
+               <div class="watch-price">$<span class="watch-price-amount">65</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch classical">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/7.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="7">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">classical</div>
+               <div class="watch-price">$<span class="watch-price-amount">28</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch sport">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/8.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="8">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">sport</div>
+               <div class="watch-price">$<span class="watch-price-amount">12</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch fancy">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/10.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="9">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">fancy</div>
+               <div class="watch-price">$<span class="watch-price-amount">355</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch sport">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/11.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="10">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">sport</div>
+               <div class="watch-price">$<span class="watch-price-amount">33</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch sport">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/12.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="11">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">sport</div>
+               <div class="watch-price">$<span class="watch-price-amount">72</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+         <!-- PRODUCT -->
+         <div class="watch women">
+            <div class="image-container">
+               <div class="watch-img">
+                  <img src="images/13.jpg">
+               </div>
+               <div id="add-to-cart-btn" class="add-to-cart-btn" data-id="12">
+                  <i class="fas fa-cart-arrow-down"></i>
+               </div>
+            </div>
+            <div class="watch-content">
+               <div class="watch-name">women</div>
+               <div class="watch-price">$<span class="watch-price-amount">48</span></div>
+            </div>
+         </div>
+         <!-- END OF PRODUCT -->
+      </div>
+   </div>
+   <!-- END OF PRODUCTS -->
+   <!-- AFTER FOOTER -->
+   <div class="follow-us">
+      <h1>FOLLOW US</h1>
+      <div class="social-media-links">
+         <div class="facebook icon-container">
+            <img src="images/facebook.png">
+         </div>
+         <div class="instagram icon-container">
+            <img src="images/instagram.png">
+         </div>
+         <div class="twitter icon-container">
+            <img src="images/twitter.png">
+         </div>
+         <div class="youtube icon-container">
+            <img src="images/youtube.png">
+         </div>
+      </div>
+   </div>
+   <!-- END OF AFTER FOOTER -->
+   <!-- FOOTER -->
+   <div class="footer">
+      <p>BY YOUNESS ATARI &copy; 2021</p>
+   </div>
+   <!-- END OF FOOTER -->
+
+   <script src="app.js"></script>
+</body>
+</html>
